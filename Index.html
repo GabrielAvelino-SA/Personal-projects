@@ -11,39 +11,35 @@
 </head>
 <body>
     <div class="container container-fluid">
-      <div class="  row">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button" id="button-addon2"><h5>=</h5></button>
-          </div>
+        <div class="row">
+          <h3 class="card" id="h3" aria-describedby="button-addon2">test</h3>
+          <input type="submit" value="=" class=" btn btn-primary" id="button-addon2" onclick="resposta()">
         </div>
-      </div>
       <div class="row">
           <div class="col col-sm">
-            <button class=" btn btn-primary ">  <h5> + </h5> </button>
-            <button class=" btn btn-primary "> <h5> - </h5> </button>
-            <button class=" btn btn-primary "> <h5> x </h5> </button>
-            <button class=" btn btn-primary "> <h5> / </h5> </button>
+            <button class=" btn btn-primary " value="+" onclick="soma(value), set(value)"><h5>+</h5></button>
+            <button class=" btn btn-primary " value="-" onclick="subtracao(value), set(value)"><h5>-</h5></button>
+            <button class=" btn btn-primary " value="x" onclick="multiplicacao(value), set(value)"><h5>x</h5></button>
+            <button class=" btn btn-primary " value="/" onclick="divisao(value), set(value)"><h5>/</h5></button>
           </div>
           <div class="col col-sm">
-            <button class=" btn btn-outline-primary "> <h5> 1 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> 4 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> 7 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> +/- </h5> </button>
+            <button class=" btn btn-outline-primary " value="1" onclick=" set(value)"> <h5> 1 </h5> </button>
+            <button class=" btn btn-outline-primary " value="4" onclick=" set(value)"> <h5> 4 </h5> </button>
+            <button class=" btn btn-outline-primary " value="7" onclick=" set(value)"> <h5> 7 </h5> </button>
+            <button class=" btn btn-outline-primary " onclick="set(value)"> <h5> +/- </h5> </button>
           </div>
           <div class="col col-sm">
-            <button class=" btn btn-outline-primary "> <h5> 2 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> 5 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> 8 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> 0 </h5> </button>
+            <button class=" btn btn-outline-primary " value="2" onclick=" set(value)"> <h5> 2 </h5> </button>
+            <button class=" btn btn-outline-primary " value="5" onclick=" set(value)"> <h5> 5 </h5> </button>
+            <button class=" btn btn-outline-primary " value="8" onclick=" set(value)"> <h5> 8 </h5> </button>
+            <button class=" btn btn-outline-primary " value="0" onclick=" set(value)"> <h5> 0 </h5> </button>
             
           </div>
           <div class="col col-sm">
-            <button class=" btn btn-outline-primary "> <h5> 3 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> 6 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> 9 </h5> </button>
-            <button class=" btn btn-outline-primary "> <h5> . </h5> </button>
+            <button class=" btn btn-outline-primary " value="3" onclick=" set(value)"> <h5> 3 </h5> </button>
+            <button class=" btn btn-outline-primary " value="6" onclick=" set(value)"> <h5> 6 </h5> </button>
+            <button class=" btn btn-outline-primary " value="9" onclick=" set(value)"> <h5> 9 </h5> </button>
+            <button class=" btn btn-outline-primary " value="." onclick=" set(value)""> <h5> . </h5> </button>
           </div>
       </div>
     </div>
@@ -51,5 +47,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="scripty.js"></script>
 </body>
 </html>
